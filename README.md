@@ -1,21 +1,20 @@
+Judy - C library creating and accessing dynamic arrays
+======================================================
 
-	     Judy - C library creating and accessing dynamic arrays
-	 ==============================================================
+Contents
+--------
 
-Content
----------
-
- 1. Introduction
- 2. Directory Contents
- 3. How to install
- 4. License
- 5. Change History
- 6. Reporting Bugs
- 7. Known Issues
+	1. Introduction
+	2. Directory Contents
+	3. How to install
+	4. License
+	5. Change History
+	6. Reporting Bugs
+	7. Known Issues
 
 
-1. INTRODUCTION
------------------
+Introduction
+------------
 
 This tree contains sources, documents, tests, and tools for the Judy package.
 This file is in a form that can be validated using the tool/readme script.
@@ -28,7 +27,7 @@ WHAT IS JUDY?  (see below for list of top-level directories and files)
 Judy is a C library that implements a dynamic array.  Empty Judy arrays are
 declared with null pointers.  A Judy array consumes memory only when
 populated yet can grow to take advantage of all available memory.  Judy's key
-benefits are:  scalability, performance, memory efficiency, and ease of use.
+benefits are: scalability, performance, memory efficiency, and ease of use.
 Judy arrays are designed to grow without tuning into the peta-element range,
 scaling near O(log-base-256) -- 1 more RAM access at 256 X population.
 
@@ -44,8 +43,8 @@ sparse arrays, hash tables, B-trees, binary trees, linear lists, skiplists,
 other sort and search algorithms, and counting functions.
 
 
-2. JUDY TOP DIRECTORY CONTENTS:
---------------------------------
+Judy top directory contents
+---------------------------
 
 AUTHORS		Judy authors and contributors
 README		This file.
@@ -62,8 +61,9 @@ test/		Test support and some timing programs.
 tool/		Primitive tool (jhton) to convert *.html files to "man" pages.
                 and build tables used by Judy to malloc() sizes of memory.
 
-3. HOW TO INSTALL
------------------
+
+How to install
+--------------
 
 For a quick description see the INSTALL file. 
 
@@ -113,8 +113,9 @@ If I want to build Judy 32-bit on Linux AMD64 I have to do:
    make check 
    make install 
 
-4. LICENSE
-----------
+
+License
+-------
 
 The user library is licensed under the GNU Lesser Public License (LGPL)
 Version 2.1, February 1999.  The full text of the LGPL is located at:
@@ -122,21 +123,23 @@ Version 2.1, February 1999.  The full text of the LGPL is located at:
 COPYING
 
 
-5. CHAGE HISTORY
-----------------
+Change History
+--------------
 
 See the ChangeLog file.
 
-6. REPORTING BUGS
------------------
+
+Reporting Bugs
+--------------
 
 If you encounter a bug, please submit it to the project bug list, 
 located on the project page:
 
     https://sourceforge.net/projects/judy/
 
-7. KNOWN ISSUES
----------------
+
+Known Issues
+------------
 
 When compiling on HP-UX, you may get a message like: 
  error 1000: Unexpected symbol: 
